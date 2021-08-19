@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: api-gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: products
+          uri: "lb://product-service"
+          predicates:
+            - Path=/products,/products/*
+        - id: orders
+          uri: "lb://order-service"
+          predicates:
+            - Path=/orders,/orders/*
+server:
+  port: ${app_port}
+eureka:
+  client:
+    serviceURL:
+      defaultZone: http://localhost:8090/eureka

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: order-service
+server:
+  port: ${app_port}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
