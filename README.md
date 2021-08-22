@@ -55,6 +55,15 @@ The project uses the following libraries & frameworks:
 * Netflix Eureka Server
 * Spring boot web, tomcat, devtools, test, configuration processor
 
+## Database diagram
+### Order Service
+![Order Service](./docs/mvp-order-service-db.jpg)
+### Product Service
+![Product Service](./docs/mvp-product-service-db.jpg)
+
+## Solution diagram
+![Solution Diagram](./docs/mvp-Solution-Diagram.jpg)
+
 ## Build & Run
 Please follow the below steps to build:
 > cd api-gateway
